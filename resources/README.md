@@ -2,8 +2,10 @@
 
 ## GitHub repos
 
-1. [VITON-implementation: Swayam, Keerthi](https://github.com/xthan/VITON)
+1. [VITON-implementation: Swayam, Keerthi](https://github.com/xthan/VITON) ⚠️ ditched because of unmatched dependencies (tf)
 2. [VITON-implementation: Navneeth, Parth](https://github.com/shadow2496/VITON-HD)
+2. [VITON-implementation: Swayam](https://github.com/b01902041/Deep-Virtual-Try-on-with-Clothes-Transform)
+2. [cp-viton-implementation: Swayam](https://github.com/sergeywong/cp-vton)
 
 ## Research Papers
 
