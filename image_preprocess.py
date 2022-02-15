@@ -41,7 +41,7 @@ class preprcessInput:
         # .convert('RGB')
         return np.asarray(self.o_image)
 
-    def transform(self, width=768, height=1024, save_path='transformed_image.png'):
+    def transform(self, width=768, height=1024, save_path='transformed_image.jpg'):
         newsize = (width, height)
         self.t_height = height
         self.t_width = width
@@ -54,7 +54,7 @@ class preprcessInput:
         background = Image.new("RGBA", newsize, (255, 255, 255, 255))
         background.paste(img, mask=img.split()[3])  # 3 is the alpha channel
 
-        background.save(save_path, 'PNG')
+        background.convert('RGB').save(save_path, 'JPEG')
 
         return np.asarray(background.convert('RGB'))
 
