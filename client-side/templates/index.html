@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- <h1>Welcome to your own virtual clothing assistant</h1>
+    <form action="{{ url_for('submit') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="cloth">
+        <input type="file" name="model">
+        <button type="submit">Submit</button>
+    </form> -->
+
+
+
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+                <img src="{{url_for('static', filename='images/logo.png')}}" height="50" width="50" style="border-radius: 50%;"/>
+
+                <span class="ml-3 text-xl">Virtual Cloth Assistant</span>
+            </a>
+
+
+        </div>
+    </header>
+
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4">Virtual Cloth Assistant</h1>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-400 text-opacity-80">Wanna try out, How that cloth suits you ?
+                    <br>
+                    Upgrade your shopping experience with an intelligent trial room.
+                    <br> Check out our API and get your wish fulfilled in seconds!!</p>
+                <div class="flex mt-6 justify-center">
+                    <div class="w-16 h-1 rounded-full bg-blue-500 inline-flex"></div>
+                </div>
+            </div>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-blue-400 mb-5 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-white text-lg title-font font-medium mb-3">The Problem</h2>
+                        <p class="leading-relaxed text-base">While buying clothes online, it is difficult for a customer to select a desirable outfit in the first attempt because they can’t try on clothes before they are delivered physically.
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-blue-400 mb-5 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <circle cx="6" cy="6" r="3"></circle>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-white text-lg title-font font-medium mb-3">The Solution</h2>
+                        <p class="leading-relaxed text-base">E-commerce websites can be equipped with virtual trial rooms that allow users to try on multiple clothes virtually and select the best looking outfit in a single attempt.
+
+                        </p>
+
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
+                    <div
+                        class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-blue-400 mb-5 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="text-white text-lg title-font font-medium mb-3">The Approach</h2>
+                        <p class="leading-relaxed text-base">
+                            We used Deep Learning to solve this problem. VCA (virtual clothing assistant) for consumers, where
+                            user can select the cloth he/she wants to wear and then upload his/her image of any pose they want and VCA is capable to
+                            dress that human with his/her selected cloth.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <button
+                class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button> -->
+        </div>
+    </section>
+
+
+
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <form action="{{ url_for('submit') }}" method="post" enctype="multipart/form-data">
+            <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-1 xl:w-1/2 md:w-1/2 w-full">
+                        <center><label class="block text-lr font-medium text-white-700"> Cloth Image </label></center>
+                        <div
+                            class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
+                            <div class="space-y-1 text-center">
+                                <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
+                                    viewBox="0 0 48 48" aria-hidden="true">
+                                    <path
+                                        d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="flex text-sm text-gray-600">
+                                    <!-- <label for="file-upload"
+                                        class="relative cursor-pointer rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                        <span>Upload a file</span> -->
+                                        <input class="block w-full text-sm text-slate-500
+                                        file:mr-4 file:py-2 file:px-4
+                                        file:rounded-full file:border-0
+                                        file:text-sm file:font-semibold
+                                        file:bg-violet-50 file:text-violet-700
+                                        hover:file:bg-violet-100" id="file-upload" type="file" name="cloth" class="sr-only">
+                                    </label>
+                                    <p class="pl-1">or drag and drop</p>
+                                </div>
+                                <p class="text-xs text-gray-500">PNG, JPG up to 10MB</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="p-1 xl:w-1/2 md:w-1/2 w-full">
+                        <center> <label class="block text-lr font-medium text-white-700"> Model Image </label></center>
+                        <div
+                            class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
+                            <div class="space-y-1 text-center">
+                                <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none"
+                                    viewBox="0 0 48 48" aria-hidden="true">
+                                    <path
+                                        d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div class="flex text-sm text-gray-600">
+                                    <!-- <label for="file-upload"
+                                        class="relative cursor-pointer rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+                                        <span>Upload a file</span> -->
+                                        <input class="block w-full text-sm text-slate-500
+                                        file:mr-4 file:py-2 file:px-4
+                                        file:rounded-full file:border-0
+                                        file:text-sm file:font-semibold
+                                        file:bg-violet-50 file:text-violet-700
+                                        hover:file:bg-violet-100" id="file-upload" type="file" name="model" class="sr-only">
+                                    </label>
+                                    <p class="pl-1">or drag and drop</p>
+                                </div>
+                                <p class="text-xs text-gray-500">PNG, JPG up to 10MB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Upload corresponding images
+                        and get the Result</h1>
+                    <p class="mb-8 leading-relaxed"> Need to wait for 20-30 seconds so chill and drink some water....
+                    </p>
+                    <div class="flex w-full justify-center items-end">
+
+                        <button type="submit"
+                            class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Try
+                            it</button>
+                    </div>
+
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div>
+                {% if op %}
+                <center style="color: white; font-size: x-large;">HERE'S IS YOUR RESULT 🤗</center>
+
+                <center>
+                    <div class="sm: w-3/4 mb-10 lg:mb-0 rounded-lg overflow-hidden">
+                        <img alt="output" class="object-cover object-center h-2/4 w-2/4"
+                            src="data:image/png;base64,{{ op }}">
+                    </div>
+                </center>
+                {% endif %}
+            </div>
+        </form>
+
+
+    </section>
+
+
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <img src="{{url_for('static', filename='images/logo.png')}}" height="50" width="50" style="border-radius: 50%;"/>
+                    <span class="ml-3 text-xl">V-Cloth Assistant</span>
+                </a>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">SWAYAM</h2>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">PARTH</h2>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">KEERTHI</h2>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">NAVANEETH</h2>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800 bg-opacity-75">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-400 text-sm text-center sm:text-left">© 2022 Crework Batch 3 —
+                    <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" rel="noopener noreferrer"
+                        target="_blank">@Crework</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
