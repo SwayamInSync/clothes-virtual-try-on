@@ -16,7 +16,7 @@ class preprcessInput:
         self.t_image = None
         self.save_path = None
 
-    def remove_bg(self, file_path:str, api_key='BQZvz7MYuq8DacL3ZMWbnJ5D'):
+    def remove_bg(self, file_path:str, api_key='qYVjUusWpt9ew8AUXgAEdsxv'):
         self.save_path = file_path[:-3]+'.png'
         response = requests.post(
             'https://api.remove.bg/v1.0/removebg',
