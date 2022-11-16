@@ -36,6 +36,6 @@ with open('/content/inputs/test_pairs.txt', 'w') as file:
 
 # making predictions
 os.system(
-    "python /content/drive/MyDrive/VITON-HD/test.py --name output --dataset_dir /content/inputs --checkpoint_dir /content/drive/MyDrive/VITON-HD/checkpoints --save_dir /content/")
+    "python /content/clothes-virtual-try-on/test.py --name output --dataset_dir /content/inputs --checkpoint_dir /content/clothes-virtual-try-on/checkpoints --save_dir /content/")
 os.system("rm -rf /content/inputs")
 os.system("rm -rf /content/output/.ipynb_checkpoints")
