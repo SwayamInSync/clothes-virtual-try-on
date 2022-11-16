@@ -7,7 +7,7 @@ import torch
 import torch.nn.functional as F
 import torchvision.transforms as transforms
 
-from networks import U2NET
+from networks.u2net import U2NET
 device = 'cuda'
 
 image_dir = '/content/inputs/test/cloth'
