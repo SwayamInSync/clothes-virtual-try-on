@@ -32,7 +32,11 @@ https://user-images.githubusercontent.com/63489382/163922795-5dbb0f52-95e4-42c6-
 
 
 ## Setup
-**Work in progress**
+- Make an account on [ngrok](https://ngrok.com/) and apply for an API key.
+- Replace the API key inside `C_A_MARK_2.ipynb` inside `!ngrok authtoken <you api>`
+- Make an account on [remove.bg](https://www.remove.bg/) and aply for API key
+- Replace the remove.bg api with yours inside `remove_bg.py` where `api = <your api>` inside the function `remove_bg`
+- Run the `C_A_MARK_2.ipynb` and you'll get the link of your server. Make a post request or use our `client-side` folder
 
 
 ## Citation
