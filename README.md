@@ -1,6 +1,6 @@
 # Cloths Virtual Try On
 ![GitHub stars](https://img.shields.io/github/stars/practice404/clothes-virtual-try-on.svg)
-[![Open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/practice404/clothes-virtual-try-on/blob/main/C_A_MARK_2.ipynb)
+[![Open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SwayamInSync/clothes-virtual-try-on/blob/main/setup.ipynb)
 
 ## Table of contents
 - [Cloths Virtual Try On](#cloths-virtual-try-on)
