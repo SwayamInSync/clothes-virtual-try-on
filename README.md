@@ -39,7 +39,7 @@ https://user-images.githubusercontent.com/63489382/163922795-5dbb0f52-95e4-42c6-
 
 
 ## Setup
-- Make an account on [ngrok](https://ngrok.com/) and get the free API key (must be starting with `ak_`).
+- Make an account on [ngrok](https://ngrok.com/) and get the token from [here](https://dashboard.ngrok.com/get-started/your-authtoken) .
 - Replace the authtoken inside `setup.ipynb` as `!ngrok authtoken <your_token>`
 - Run the `setup.ipynb` and you'll get the link of your server. Make a post request or use our `client-side` folder
 
