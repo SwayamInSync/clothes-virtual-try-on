@@ -1,5 +1,5 @@
 # Cloths Virtual Try On
-[![Open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SwayamInSync/clothes-virtual-try-on/blob/main/setup.ipynb)
+[![Open in colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SwayamInSync/clothes-virtual-try-on/blob/main/setup_gradio.ipynb)
 
 ## Table of contents
 - [Cloths Virtual Try On](#cloths-virtual-try-on)
@@ -8,11 +8,12 @@
   - [Demo](#demo)
   - [Block Diagram](#block-diagram)
   - [Methodology](#methodology)
-  - [Setup](#setup)
+  - [Usage](#usage)
   - [Citation](#citation)
 
 ## Updates
 
+- [26/12/2023] Added the Gradio interface and removed all the external depenency
 - [19/12/2023] Fixed the `openpose` installation and missing model weights issue
 - [19/12/2023] Replaced the `remove.bg` dependecy with `rembg`
 - [26/04/2023] Fixed the GAN generation issue
@@ -38,10 +39,8 @@ https://user-images.githubusercontent.com/63489382/163922795-5dbb0f52-95e4-42c6-
 ![block_diagram_detailed](https://user-images.githubusercontent.com/63489382/163922991-86d148c2-1a97-48a5-b4ec-d8c16819374a.png)
 
 
-## Setup
-- Make an account on [ngrok](https://ngrok.com/) and get the token from [here](https://dashboard.ngrok.com/get-started/your-authtoken) .
-- Replace the authtoken inside `setup.ipynb` as `!ngrok authtoken <your_token>`
-- Run the `setup.ipynb` and you'll get the link of your server. Make a post request or use our `client-side` folder
+## Usage
+- Just Click on `open in colab` button on top of this README file
 
 
 ## Citation
