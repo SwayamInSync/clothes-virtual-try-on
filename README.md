@@ -12,7 +12,7 @@
   - [Citation](#citation)
 
 ## Updates
-- **[19/02/2024] From now this repo won't receive any future update from my side as I'm currently working on its 2.0 update (Community Contributions & Issues discussions are still welcome 🤗)**
+- **[19/02/2024] From now on this repo won't receive any future updates from my side (Spoiler: It's not gone for good 😉. Expect its return, stronger than ever.) (Community Contributions & Issues discussions are still welcome 🤗)**
 - [26/12/2023] Added the Gradio interface and removed all the external depenency
 - [19/12/2023] Fixed the `openpose` installation and missing model weights issue
 - [19/12/2023] Replaced the `remove.bg` dependecy with `rembg`
