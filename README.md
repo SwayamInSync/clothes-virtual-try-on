@@ -8,6 +8,9 @@
 - [19/12/2023] Replaced the `remove.bg` dependecy with `rembg`
 - [26/04/2023] Fixed the GAN generation issue
 
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=SwayamInSync/clothes-virtual-try-on&type=Date)](https://star-history.com/#SwayamInSync/clothes-virtual-try-on&Date)
+
 ## Table of contents
 - [Cloths Virtual Try On](#cloths-virtual-try-on)
   - [Table of contents](#table-of-contents)
